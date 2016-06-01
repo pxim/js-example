@@ -1,0 +1,11 @@
+{
+	"groups":[{
+			"keys":"",
+			"name":"standardInfo"
+		}],
+	"resources":[{
+			"content":"description",
+			"id":"text",
+			"content2":"text"
+		}]
+}
