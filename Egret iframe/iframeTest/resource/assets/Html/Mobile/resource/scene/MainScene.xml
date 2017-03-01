@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout id="544" sceneSize="640,360" next="" previous="" eventSheet="MainSceneEventSheet" version="1.2">
+  <item UID="556" plugin="AISprite" name="mc_bg" parallaxX="100" parallaxY="100" isVirtual="false">
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="uiGuid" value="556" valueDataType="string"/>
+    <item name="x" value="0" valueDataType="number"/>
+    <item name="y" value="0" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="640" valueDataType="number"/>
+    <item name="height" value="360" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="url" value="resource%2Fimage%2Fbg.png" valueDataType="string"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="layer" value="0" valueDataType="number"/>
+  </item>
+  <item UID="558" plugin="AISprite" name="mc_line" parallaxX="100" parallaxY="100" isVirtual="false">
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="uiGuid" value="558" valueDataType="string"/>
+    <item name="x" value="50" valueDataType="number"/>
+    <item name="y" value="341" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="580" valueDataType="number"/>
+    <item name="height" value="10" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="url" value="resource%2Fimage%2Fline.png" valueDataType="string"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="layer" value="0" valueDataType="number"/>
+  </item>
+  <item UID="550" plugin="AIButton" name="btn_stop" parallaxX="100" parallaxY="100" isVirtual="false">
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="uiGuid" value="550" valueDataType="string"/>
+    <item name="x" value="15" valueDataType="number"/>
+    <item name="y" value="336" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="20" valueDataType="number"/>
+    <item name="height" value="20" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="upSkin" value="resource%2Fimage%2Fstop_0.png" valueDataType="string"/>
+    <item name="downSkin" value="resource%2Fimage%2Fstop_1.png" valueDataType="string"/>
+    <item name="disableSkin" value="" valueDataType="string"/>
+    <item name="text" value="" valueDataType="string"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="layer" value="0" valueDataType="number"/>
+  </item>
+  <item UID="548" plugin="AIButton" name="btn_start" parallaxX="100" parallaxY="100" isVirtual="false">
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="uiGuid" value="548" valueDataType="string"/>
+    <item name="x" value="15" valueDataType="number"/>
+    <item name="y" value="336" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="20" valueDataType="number"/>
+    <item name="height" value="20" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="upSkin" value="resource%2Fimage%2Fstart_0.png" valueDataType="string"/>
+    <item name="downSkin" value="resource%2Fimage%2Fstart_1.png" valueDataType="string"/>
+    <item name="disableSkin" value="" valueDataType="string"/>
+    <item name="text" value="" valueDataType="string"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="layer" value="0" valueDataType="number"/>
+  </item>
+  <item UID="566" plugin="AISprite" name="mc_point" parallaxX="100" parallaxY="100" isVirtual="false">
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="uiGuid" value="566" valueDataType="string"/>
+    <item name="x" value="50" valueDataType="number"/>
+    <item name="y" value="347" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="15" valueDataType="number"/>
+    <item name="height" value="15" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="url" value="resource%2Fimage%2Fpt.png" valueDataType="string"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="layer" value="0" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="DragDropBehaivor" name="拖拽">
+        <item valueDataType="any" value="1" name="axes"/>
+        <item valueDataType="any" value="1" name="enabled"/>
+      </item>
+    </item>
+  </item>
+  <item UID="587" plugin="AIMovieClip" name="mc_0" parallaxX="100" parallaxY="100" isVirtual="false">
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="uiGuid" value="587" valueDataType="string"/>
+    <item name="x" value="120" valueDataType="number"/>
+    <item name="y" value="35" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="400" valueDataType="number"/>
+    <item name="height" value="271" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="actions" value="" valueDataType="string">
+      <item name="动画" loop="0" fps="25" scaleX="1" scaleY="1">
+        <item src="resource%2Fimage%2Fst0001.png"/>
+        <item src="resource%2Fimage%2Fst0005.png"/>
+        <item src="resource%2Fimage%2Fst0009.png"/>
+        <item src="resource%2Fimage%2Fst0015.png"/>
+        <item src="resource%2Fimage%2Fst0019.png"/>
+        <item src="resource%2Fimage%2Fst0021.png"/>
+        <item src="resource%2Fimage%2Fst0025.png"/>
+        <item src="resource%2Fimage%2Fst0029.png"/>
+        <item src="resource%2Fimage%2Fst0031.png"/>
+        <item src="resource%2Fimage%2Fst0035.png"/>
+        <item src="resource%2Fimage%2Fst0039.png"/>
+        <item src="resource%2Fimage%2Fst0041.png"/>
+        <item src="resource%2Fimage%2Fst0045.png"/>
+        <item src="resource%2Fimage%2Fst0049.png"/>
+        <item src="resource%2Fimage%2Fst0051.png"/>
+        <item src="resource%2Fimage%2Fst0055.png"/>
+        <item src="resource%2Fimage%2Fst0059.png"/>
+        <item src="resource%2Fimage%2Fst0061.png"/>
+        <item src="resource%2Fimage%2Fst0065.png"/>
+        <item src="resource%2Fimage%2Fst0069.png"/>
+        <item src="resource%2Fimage%2Fst0071.png"/>
+        <item src="resource%2Fimage%2Fst0075.png"/>
+        <item src="resource%2Fimage%2Fst0079.png"/>
+        <item src="resource%2Fimage%2Fst0081.png"/>
+        <item src="resource%2Fimage%2Fst0085.png"/>
+        <item src="resource%2Fimage%2Fst0089.png"/>
+        <item src="resource%2Fimage%2Fst0091.png"/>
+        <item src="resource%2Fimage%2Fst0095.png"/>
+        <item src="resource%2Fimage%2Fst0099.png"/>
+        <item src="resource%2Fimage%2Fst0101.png"/>
+        <item src="resource%2Fimage%2Fst0105.png"/>
+        <item src="resource%2Fimage%2Fst0109.png"/>
+        <item src="resource%2Fimage%2Fst0115.png"/>
+        <item src="resource%2Fimage%2Fst0121.png"/>
+        <item src="resource%2Fimage%2Fst0125.png"/>
+        <item src="resource%2Fimage%2Fst0129.png"/>
+        <item src="resource%2Fimage%2Fst0131.png"/>
+        <item src="resource%2Fimage%2Fst0135.png"/>
+        <item src="resource%2Fimage%2Fst0139.png"/>
+        <item src="resource%2Fimage%2Fst0141.png"/>
+        <item src="resource%2Fimage%2Fst0145.png"/>
+        <item src="resource%2Fimage%2Fst0149.png"/>
+        <item src="resource%2Fimage%2Fst0151.png"/>
+        <item src="resource%2Fimage%2Fst0155.png"/>
+        <item src="resource%2Fimage%2Fst0159.png"/>
+        <item src="resource%2Fimage%2Fst0161.png"/>
+        <item src="resource%2Fimage%2Fst0165.png"/>
+        <item src="resource%2Fimage%2Fst0169.png"/>
+        <item src="resource%2Fimage%2Fst0171.png"/>
+        <item src="resource%2Fimage%2Fst0175.png"/>
+        <item src="resource%2Fimage%2Fst0179.png"/>
+        <item src="resource%2Fimage%2Fst0181.png"/>
+        <item src="resource%2Fimage%2Fst0185.png"/>
+        <item src="resource%2Fimage%2Fst0189.png"/>
+        <item src="resource%2Fimage%2Fst0191.png"/>
+        <item src="resource%2Fimage%2Fst0195.png"/>
+        <item src="resource%2Fimage%2Fst0199.png"/>
+        <item src="resource%2Fimage%2Fst0201.png"/>
+        <item src="resource%2Fimage%2Fst0205.png"/>
+        <item src="resource%2Fimage%2Fst0209.png"/>
+        <item src="resource%2Fimage%2Fst0211.png"/>
+        <item src="resource%2Fimage%2Fst0215.png"/>
+        <item src="resource%2Fimage%2Fst0219.png"/>
+        <item src="resource%2Fimage%2Fst0221.png"/>
+        <item src="resource%2Fimage%2Fst0225.png"/>
+        <item src="resource%2Fimage%2Fst0229.png"/>
+        <item src="resource%2Fimage%2Fst0231.png"/>
+        <item src="resource%2Fimage%2Fst0235.png"/>
+        <item src="resource%2Fimage%2Fst0239.png"/>
+        <item src="resource%2Fimage%2Fst0241.png"/>
+        <item src="resource%2Fimage%2Fst0245.png"/>
+        <item src="resource%2Fimage%2Fst0249.png"/>
+        <item src="resource%2Fimage%2Fst0251.png"/>
+        <item src="resource%2Fimage%2Fst0255.png"/>
+        <item src="resource%2Fimage%2Fst0259.png"/>
+        <item src="resource%2Fimage%2Fst0261.png"/>
+        <item src="resource%2Fimage%2Fst0265.png"/>
+        <item src="resource%2Fimage%2Fst0269.png"/>
+        <item src="resource%2Fimage%2Fst0271.png"/>
+        <item src="resource%2Fimage%2Fst0275.png"/>
+        <item src="resource%2Fimage%2Fst0279.png"/>
+        <item src="resource%2Fimage%2Fst0281.png"/>
+        <item src="resource%2Fimage%2Fst0285.png"/>
+        <item src="resource%2Fimage%2Fst0289.png"/>
+        <item src="resource%2Fimage%2Fst0291.png"/>
+        <item src="resource%2Fimage%2Fst0295.png"/>
+        <item src="resource%2Fimage%2Fst0299.png"/>
+        <item src="resource%2Fimage%2Fst0301.png"/>
+        <item src="resource%2Fimage%2Fst0305.png"/>
+        <item src="resource%2Fimage%2Fst0309.png"/>
+        <item src="resource%2Fimage%2Fst0311.png"/>
+        <item src="resource%2Fimage%2Fst0315.png"/>
+        <item src="resource%2Fimage%2Fst0319.png"/>
+        <item src="resource%2Fimage%2Fst0321.png"/>
+        <item src="resource%2Fimage%2Fst0325.png"/>
+        <item src="resource%2Fimage%2Fst0329.png"/>
+        <item src="resource%2Fimage%2Fst0331.png"/>
+        <item src="resource%2Fimage%2Fst0335.png"/>
+        <item src="resource%2Fimage%2Fst0339.png"/>
+        <item src="resource%2Fimage%2Fst0341.png"/>
+        <item src="resource%2Fimage%2Fst0345.png"/>
+        <item src="resource%2Fimage%2Fst0349.png"/>
+        <item src="resource%2Fimage%2Fst0351.png"/>
+        <item src="resource%2Fimage%2Fst0355.png"/>
+        <item src="resource%2Fimage%2Fst0359.png"/>
+        <item src="resource%2Fimage%2Fst0361.png"/>
+        <item src="resource%2Fimage%2Fst0365.png"/>
+        <item src="resource%2Fimage%2Fst0369.png"/>
+        <item src="resource%2Fimage%2Fst0371.png"/>
+        <item src="resource%2Fimage%2Fst0375.png"/>
+        <item src="resource%2Fimage%2Fst0379.png"/>
+        <item src="resource%2Fimage%2Fst0381.png"/>
+        <item src="resource%2Fimage%2Fst0385.png"/>
+        <item src="resource%2Fimage%2Fst0389.png"/>
+        <item src="resource%2Fimage%2Fst0391.png"/>
+        <item src="resource%2Fimage%2Fst0395.png"/>
+        <item src="resource%2Fimage%2Fst0399.png"/>
+        <item src="resource%2Fimage%2Fst0401.png"/>
+        <item src="resource%2Fimage%2Fst0405.png"/>
+        <item src="resource%2Fimage%2Fst0409.png"/>
+        <item src="resource%2Fimage%2Fst0411.png"/>
+        <item src="resource%2Fimage%2Fst0415.png"/>
+        <item src="resource%2Fimage%2Fst0419.png"/>
+        <item src="resource%2Fimage%2Fst0421.png"/>
+        <item src="resource%2Fimage%2Fst0425.png"/>
+        <item src="resource%2Fimage%2Fst0429.png"/>
+        <item src="resource%2Fimage%2Fst0431.png"/>
+        <item src="resource%2Fimage%2Fst0435.png"/>
+        <item src="resource%2Fimage%2Fst0439.png"/>
+        <item src="resource%2Fimage%2Fst0441.png"/>
+        <item src="resource%2Fimage%2Fst0445.png"/>
+        <item src="resource%2Fimage%2Fst0449.png"/>
+        <item src="resource%2Fimage%2Fst0451.png"/>
+        <item src="resource%2Fimage%2Fst0455.png"/>
+        <item src="resource%2Fimage%2Fst0459.png"/>
+        <item src="resource%2Fimage%2Fst0461.png"/>
+        <item src="resource%2Fimage%2Fst0465.png"/>
+        <item src="resource%2Fimage%2Fst0469.png"/>
+        <item src="resource%2Fimage%2Fst0471.png"/>
+        <item src="resource%2Fimage%2Fst0475.png"/>
+        <item src="resource%2Fimage%2Fst0479.png"/>
+        <item src="resource%2Fimage%2Fst0481.png"/>
+        <item src="resource%2Fimage%2Fst0485.png"/>
+        <item src="resource%2Fimage%2Fst0489.png"/>
+        <item src="resource%2Fimage%2Fst0491.png"/>
+        <item src="resource%2Fimage%2Fst0495.png"/>
+        <item src="resource%2Fimage%2Fst0499.png"/>
+        <item src="resource%2Fimage%2Fst0501.png"/>
+        <item src="resource%2Fimage%2Fst0505.png"/>
+        <item src="resource%2Fimage%2Fst0509.png"/>
+        <item src="resource%2Fimage%2Fst0511.png"/>
+      </item>
+    </item>
+    <item name="layer" value="0" valueDataType="number"/>
+  </item>
+  <item UID="572" plugin="AITextField" name="AITextField571" parallaxX="100" parallaxY="100" isVirtual="false">
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="uiGuid" value="572" valueDataType="string"/>
+    <item name="x" value="0" valueDataType="number"/>
+    <item name="y" value="0" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="640" valueDataType="number"/>
+    <item name="height" value="35" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="text" value="%E6%9C%BA%E6%B2%B9%E6%B3%B5%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86" valueDataType="string"/>
+    <item name="fontFamily" value="%E5%AE%8B%E4%BD%93" valueDataType="string"/>
+    <item name="size" value="20" valueDataType="number"/>
+    <item name="textColor" value="0" valueDataType="number"/>
+    <item name="bold" value="1" valueDataType="number"/>
+    <item name="enableInput" value="0" valueDataType="number"/>
+    <item name="textAlign" value="center" valueDataType="string"/>
+    <item name="verticalAlign" value="middle" valueDataType="string"/>
+    <item name="maxChars" value="100" valueDataType="number"/>
+    <item name="italic" value="0" valueDataType="number"/>
+    <item name="displayAsPassword" value="0" valueDataType="number"/>
+    <item name="wordWrap" value="0" valueDataType="number"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="layer" value="0" valueDataType="number"/>
+  </item>
+  <item UID="589" plugin="AITextField" name="AITextField588" parallaxX="100" parallaxY="100" isVirtual="false">
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="uiGuid" value="589" valueDataType="string"/>
+    <item name="x" value="0" valueDataType="number"/>
+    <item name="y" value="310" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="640" valueDataType="number"/>
+    <item name="height" value="30" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="text" value="%E4%B8%BB%E5%8A%A8%E9%BD%BF%E8%BD%AE%E5%B8%A6%E5%8A%A8%E4%BB%8E%E5%8A%A8%E9%BD%BF%E8%BD%AE%E6%97%8B%E8%BD%AC%E6%97%B6%EF%BC%8C%E6%9C%BA%E6%B2%B9%E4%BB%8E%E8%BF%9B%E6%B2%B9%E5%8F%A3%E5%90%B8%E5%85%A5%EF%BC%9B%E6%97%8B%E8%BD%AC%E7%9A%84%E9%BD%BF%E8%BD%AE%E5%B0%86%E9%BD%BF%E9%97%B4%E6%9C%BA%E6%B2%B9%E5%B8%A6%E5%88%B0%E5%87%BA%E6%B2%B9%E8%85%94%EF%BC%8C%E6%9C%BA%E6%B2%B9%E7%BB%8F%E5%87%BA%E6%B2%B9%E5%8F%A3%E5%8E%8B%E5%87%BA%E3%80%82" valueDataType="string"/>
+    <item name="fontFamily" value="%E5%AE%8B%E4%BD%93" valueDataType="string"/>
+    <item name="size" value="12" valueDataType="number"/>
+    <item name="textColor" value="65536" valueDataType="number"/>
+    <item name="bold" value="0" valueDataType="number"/>
+    <item name="enableInput" value="0" valueDataType="number"/>
+    <item name="textAlign" value="center" valueDataType="string"/>
+    <item name="verticalAlign" value="middle" valueDataType="string"/>
+    <item name="maxChars" value="100" valueDataType="number"/>
+    <item name="italic" value="0" valueDataType="number"/>
+    <item name="displayAsPassword" value="0" valueDataType="number"/>
+    <item name="wordWrap" value="0" valueDataType="number"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="layer" value="0" valueDataType="number"/>
+  </item>
+</layout>

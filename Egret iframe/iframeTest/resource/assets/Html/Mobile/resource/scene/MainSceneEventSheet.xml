@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventSheets layout="MainScene" previous="" next="" version="1.2">
+  <item type="instance" UID="589"/>
+  <item type="instance" UID="572"/>
+  <item type="instance" UID="587"/>
+  <item type="instance" UID="566">
+    <item initValue="50" variableType="number" variableName="min_x" type="variable"/>
+    <item initValue="630" variableType="number" variableName="max_x" type="variable"/>
+    <item initValue="1" variableType="number" variableName="c_frame" type="variable"/>
+    <item type="behavior" behaviorType="DragDropBehaivor" name="拖拽">
+      <item valueDataType="any" value="1" name="axes"/>
+      <item valueDataType="any" value="1" name="enabled"/>
+    </item>
+  </item>
+  <item type="instance" UID="548"/>
+  <item type="instance" UID="550"/>
+  <item type="instance" UID="558">
+    <item initValue="580" variableType="number" variableName="max_line" type="variable"/>
+  </item>
+  <item type="instance" UID="556"/>
+  <item type="variable" variableName="t_frame" variableType="number" initValue="0"/>
+  <item type="variable" variableName="c_frame" variableType="number" initValue="0"/>
+  <item type="variable" variableName="c_idx" variableType="number" initValue="0"/>
+  <item type="variable" variableName="isLock" variableType="number" initValue="0"/>
+  <item type="variable" variableName="isPlay" variableType="number" initValue="0"/>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnCreatedEvent" callName="onCreated" isTrigger="true" target="btn_start"/>
+    <item type="action" callTarget="instance" callName="setVisible" isTrigger="true" target="btn_start">
+      <item valueDataType="any" value="1" name="32"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnCreatedEvent" callName="onCreated" isTrigger="true" target="btn_stop"/>
+    <item type="action" callTarget="instance" callName="setVisible" isTrigger="true" target="btn_stop">
+      <item valueDataType="any" value="0" name="32"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnCreatedEvent" callName="onCreated" isTrigger="true" target="mc_0"/>
+    <item type="action" callTarget="instance" callName="gotoAndStop" isTrigger="true" target="mc_0">
+      <item valueDataType="any" value="1" name="33"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setVisible" isTrigger="true" target="mc_0">
+      <item valueDataType="any" value="1" name="32"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="CompareVariableEvent" callName="compareVariable" isTrigger="false" target="System">
+      <item valueDataType="string" value="isLock" name="variable" variable="true"/>
+      <item valueDataType="any" value="equalTo" name="operationType"/>
+      <item valueDataType="any" value="1" name="value"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setValue" isTrigger="true" target="System">
+      <item valueDataType="string" value="isLock" name="5" variable="true"/>
+      <item valueDataType="any" value="0" name="6"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="btn_start"/>
+    <item type="action" callTarget="instance" callName="setVisible" isTrigger="true" target="btn_start">
+      <item valueDataType="any" value="0" name="32"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setVisible" isTrigger="true" target="btn_stop">
+      <item valueDataType="any" value="1" name="32"/>
+    </item>
+    <item type="action" callTarget="instance" callName="play" isTrigger="true" target="mc_0">
+      <item valueDataType="any" value="1" name="34"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setValue" isTrigger="true" target="System">
+      <item valueDataType="string" value="isLock" name="5" variable="true"/>
+      <item valueDataType="any" value="1" name="6"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setValue" isTrigger="true" target="System">
+      <item valueDataType="string" value="isPlay" name="5" variable="true"/>
+      <item valueDataType="any" value="1" name="6"/>
+    </item>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="CompareTwoValuesEvent" callName="compareTwoValue" isTrigger="false" target="mc_0">
+        <item valueDataType="any" value="mc_0.currentFrame" name="value1"/>
+        <item valueDataType="any" value="greaterOrEqual" name="operationType"/>
+        <item valueDataType="any" value="mc_0.totalFrames" name="value2"/>
+      </item>
+      <item type="action" callTarget="instance" callName="gotoAndStop" isTrigger="true" target="mc_0">
+        <item valueDataType="any" value="1" name="33"/>
+      </item>
+      <item type="action" callTarget="instance" callName="play" isTrigger="true" target="mc_0">
+        <item valueDataType="any" value="1" name="34"/>
+      </item>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="btn_stop"/>
+    <item type="condition" callTarget="instance" paramsClass="CompareVariableEvent" callName="compareVariable" isTrigger="false" target="System">
+      <item valueDataType="string" value="isLock" name="variable" variable="true"/>
+      <item valueDataType="any" value="equalTo" name="operationType"/>
+      <item valueDataType="any" value="0" name="value"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setVisible" isTrigger="true" target="btn_start">
+      <item valueDataType="any" value="1" name="32"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setVisible" isTrigger="true" target="btn_stop">
+      <item valueDataType="any" value="0" name="32"/>
+    </item>
+    <item type="action" callTarget="instance" callName="stop" isTrigger="true" target="mc_0"/>
+    <item type="action" callTarget="instance" callName="setValue" isTrigger="true" target="System">
+      <item valueDataType="string" value="isPlay" name="5" variable="true"/>
+      <item valueDataType="any" value="0" name="6"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="IsPlayingEvent" callName="isPlayingCheck" isTrigger="false" target="mc_0"/>
+    <item type="action" callTarget="instance" callName="setX" isTrigger="true" target="mc_point">
+      <item valueDataType="any" value="mc_point.min_x%2Bmc_line.width*mc_0.currentFrame%2Fmc_0.totalFrames" name="29"/>
+    </item>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="CompareTwoValuesEvent" callName="compareTwoValue" isTrigger="false" target="mc_0">
+        <item valueDataType="any" value="mc_0.currentFrame" name="value1"/>
+        <item valueDataType="any" value="equalTo" name="operationType"/>
+        <item valueDataType="any" value="mc_0.totalFrames" name="value2"/>
+      </item>
+      <item type="action" callTarget="instance" callName="stop" isTrigger="true" target="mc_0"/>
+      <item type="action" callTarget="instance" callName="setVisible" isTrigger="true" target="btn_start">
+        <item valueDataType="any" value="1" name="32"/>
+      </item>
+      <item type="action" callTarget="instance" callName="setVisible" isTrigger="true" target="btn_stop">
+        <item valueDataType="any" value="0" name="32"/>
+      </item>
+      <item type="action" callTarget="instance" callName="setValue" isTrigger="true" target="System">
+        <item valueDataType="string" value="isPlay" name="5" variable="true"/>
+        <item valueDataType="any" value="0" name="6"/>
+      </item>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="IsButtonDownEvent" callName="isTouchDown" isTrigger="false" target="mc_point"/>
+    <item type="action" callTarget="instance" callName="stop" isTrigger="true" target="mc_0"/>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="B_DrapDrop_onDropEvent" callName="onDrop" isTrigger="true" target="mc_point" behaviorName="拖拽"/>
+    <item type="condition" callTarget="instance" paramsClass="CompareVariableEvent" callName="compareVariable" isTrigger="false" target="System">
+      <item valueDataType="string" value="isPlay" name="variable" variable="true"/>
+      <item valueDataType="any" value="equalTo" name="operationType"/>
+      <item valueDataType="any" value="1" name="value"/>
+    </item>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="CompareVariableEvent" callName="compareVariable" isTrigger="false" target="System">
+        <item valueDataType="string" value="isPlay" name="variable" variable="true"/>
+        <item valueDataType="any" value="equalTo" name="operationType"/>
+        <item valueDataType="any" value="1" name="value"/>
+      </item>
+      <item type="action" callTarget="instance" callName="play" isTrigger="true" target="mc_0">
+        <item valueDataType="any" value="1" name="34"/>
+      </item>
+    </item>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="CompareTwoValuesEvent" callName="compareTwoValue" isTrigger="false" target="mc_0">
+        <item valueDataType="any" value="mc_0.currentFrame" name="value1"/>
+        <item valueDataType="any" value="equalTo" name="operationType"/>
+        <item valueDataType="any" value="mc_0.totalFrames" name="value2"/>
+      </item>
+      <item type="action" callTarget="instance" callName="stop" isTrigger="true" target="mc_0"/>
+      <item type="action" callTarget="instance" callName="setVisible" isTrigger="true" target="btn_start">
+        <item valueDataType="any" value="1" name="32"/>
+      </item>
+      <item type="action" callTarget="instance" callName="setVisible" isTrigger="true" target="btn_stop">
+        <item valueDataType="any" value="0" name="32"/>
+      </item>
+      <item type="action" callTarget="instance" callName="setValue" isTrigger="true" target="System">
+        <item valueDataType="string" value="isPlay" name="5" variable="true"/>
+        <item valueDataType="any" value="0" name="6"/>
+      </item>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonEndEvent" callName="onButtonEnd" isTrigger="true" target="mc_point"/>
+    <item type="condition" callTarget="instance" paramsClass="CompareVariableEvent" callName="compareVariable" isTrigger="false" target="System">
+      <item valueDataType="string" value="isPlay" name="variable" variable="true"/>
+      <item valueDataType="any" value="equalTo" name="operationType"/>
+      <item valueDataType="any" value="1" name="value"/>
+    </item>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="CompareVariableEvent" callName="compareVariable" isTrigger="false" target="System">
+        <item valueDataType="string" value="isPlay" name="variable" variable="true"/>
+        <item valueDataType="any" value="equalTo" name="operationType"/>
+        <item valueDataType="any" value="1" name="value"/>
+      </item>
+      <item type="action" callTarget="instance" callName="play" isTrigger="true" target="mc_0">
+        <item valueDataType="any" value="1" name="34"/>
+      </item>
+    </item>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="CompareTwoValuesEvent" callName="compareTwoValue" isTrigger="false" target="mc_0">
+        <item valueDataType="any" value="mc_0.currentFrame" name="value1"/>
+        <item valueDataType="any" value="equalTo" name="operationType"/>
+        <item valueDataType="any" value="mc_0.totalFrames" name="value2"/>
+      </item>
+      <item type="action" callTarget="instance" callName="stop" isTrigger="true" target="mc_0"/>
+      <item type="action" callTarget="instance" callName="setVisible" isTrigger="true" target="btn_start">
+        <item valueDataType="any" value="1" name="32"/>
+      </item>
+      <item type="action" callTarget="instance" callName="setVisible" isTrigger="true" target="btn_stop">
+        <item valueDataType="any" value="0" name="32"/>
+      </item>
+      <item type="action" callTarget="instance" callName="setValue" isTrigger="true" target="System">
+        <item valueDataType="string" value="isPlay" name="5" variable="true"/>
+        <item valueDataType="any" value="0" name="6"/>
+      </item>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="B_DragDrop_IsDraggingEvent" callName="isDragging" isTrigger="false" target="mc_point" behaviorName="拖拽"/>
+    <item type="action" callTarget="instance" callName="setValue" isTrigger="true" target="mc_point">
+      <item valueDataType="string" value="c_frame" name="5" variable="true"/>
+      <item valueDataType="any" value="Math.floor(mc_0.totalFrames*(mc_point.x-mc_line.x)%2Fmc_line.width)%2B1" name="6"/>
+    </item>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="CompareTwoValuesEvent" callName="compareTwoValue" isTrigger="false" target="mc_point">
+        <item valueDataType="any" value="mc_point.x" name="value1"/>
+        <item valueDataType="any" value="lessThan" name="operationType"/>
+        <item valueDataType="any" value="mc_point.min_x" name="value2"/>
+      </item>
+      <item type="action" callTarget="instance" callName="setX" isTrigger="true" target="mc_point">
+        <item valueDataType="any" value="mc_point.min_x" name="29"/>
+      </item>
+    </item>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="CompareTwoValuesEvent" callName="compareTwoValue" isTrigger="false" target="mc_point">
+        <item valueDataType="any" value="mc_point.x" name="value1"/>
+        <item valueDataType="any" value="greaterThan" name="operationType"/>
+        <item valueDataType="any" value="mc_point.max_x" name="value2"/>
+      </item>
+      <item type="action" callTarget="instance" callName="setX" isTrigger="true" target="mc_point">
+        <item valueDataType="any" value="mc_point.max_x" name="29"/>
+      </item>
+    </item>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="CompareInstanceVariableEvent" callName="compareInstanceVariable" isTrigger="false" target="mc_point">
+        <item valueDataType="string" value="c_frame" name="instanceVariable" variable="true"/>
+        <item valueDataType="any" value="lessThan" name="operationType"/>
+        <item valueDataType="any" value="1" name="value"/>
+      </item>
+      <item type="action" callTarget="instance" callName="setValue" isTrigger="true" target="mc_point">
+        <item valueDataType="string" value="c_frame" name="5" variable="true"/>
+        <item valueDataType="any" value="1" name="6"/>
+      </item>
+    </item>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="CompareInstanceVariableEvent" callName="compareInstanceVariable" isTrigger="false" target="mc_point">
+        <item valueDataType="string" value="c_frame" name="instanceVariable" variable="true"/>
+        <item valueDataType="any" value="greaterThan" name="operationType"/>
+        <item valueDataType="any" value="mc_0.totalFrames" name="value"/>
+      </item>
+      <item type="action" callTarget="instance" callName="setValue" isTrigger="true" target="mc_point">
+        <item valueDataType="string" value="c_frame" name="5" variable="true"/>
+        <item valueDataType="any" value="mc_0.totalFrames" name="6"/>
+      </item>
+    </item>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="B_DragDrop_IsDraggingEvent" callName="isDragging" isTrigger="false" target="mc_point" behaviorName="拖拽"/>
+      <item type="action" callTarget="instance" callName="gotoAndStop" isTrigger="true" target="mc_0">
+        <item valueDataType="any" value="mc_point.c_frame" name="33"/>
+      </item>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="EveryTickEvent" callName="everyTick" isTrigger="false" target="System"/>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="CompareTwoValuesEvent" callName="compareTwoValue" isTrigger="false" target="mc_point">
+        <item valueDataType="any" value="mc_point.x" name="value1"/>
+        <item valueDataType="any" value="lessThan" name="operationType"/>
+        <item valueDataType="any" value="mc_point.min_x" name="value2"/>
+      </item>
+      <item type="action" callTarget="instance" callName="setX" isTrigger="true" target="mc_point">
+        <item valueDataType="any" value="mc_point.min_x" name="29"/>
+      </item>
+    </item>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="CompareTwoValuesEvent" callName="compareTwoValue" isTrigger="false" target="mc_point">
+        <item valueDataType="any" value="mc_point.x" name="value1"/>
+        <item valueDataType="any" value="greaterThan" name="operationType"/>
+        <item valueDataType="any" value="mc_point.max_x" name="value2"/>
+      </item>
+      <item type="action" callTarget="instance" callName="setX" isTrigger="true" target="mc_point">
+        <item valueDataType="any" value="mc_point.max_x" name="29"/>
+      </item>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false"/>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="EveryTickEvent" callName="everyTick" isTrigger="false" target="System"/>
+  </item>
+</eventSheets>
