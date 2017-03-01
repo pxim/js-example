@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>主页面</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js" />
+    <script >
+function showSubValue(){
+//var v = window.frames[0].document.getElementById("subdiv1").innerHTML;
+//alert(v);
+//   http://hi.baidu.com/bigideaer/blog/item/780337e6af39933d2df534ff.html
+var o = $(window.frames[0].document).find(":div#subdiv1");
+alert(o.html());
+}
+</script>
+</head>
+
+<body>
+    <div id="mainDiv">主页面测试数据</div>
+    <input type="button" value="查看子页面数据" onclick="showSubValue();" />
+    <iframe src="sub.html" width="300" height="300"></iframe>
+</body>
+<div id="subdiv1">子页面测试数据</div>
+<input type="button" value="显示父页面数据" onclick="showMainValue();" />
+
+</html>

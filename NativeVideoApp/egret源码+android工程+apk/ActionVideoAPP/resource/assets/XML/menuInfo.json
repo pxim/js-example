@@ -1,0 +1,84 @@
+{
+  "menu": {
+    "Item": [
+      {
+        "content": "主题名",
+        "id": "1",
+        "type": "1",
+        "Item": [
+          {
+            "content": "item1",
+            "id": "1",
+            "type": "1",
+            "bg_up": "item_up_png",
+            "resources": "a1.mp4"
+          },
+          {
+            "content": "item2",
+            "id": "2",
+            "type": "1",
+            "bg_up": "item_up_png",
+            "resources": "a2.mp4"
+          },
+          {
+            "content": "item3",
+            "id": "3",
+            "type": "1",
+            "bg_up": "item_up_png",
+            "resources": "a3.mp4"
+          },
+          {
+            "content": "item4",
+            "id": "4",
+            "type": "1",
+            "bg_up": "item_up_png",
+            "resources": "a4.mp4"
+          },
+          {
+            "content": "item5",
+            "id": "5",
+            "type": "1",
+            "bg_up": "item_up_png",
+            "resources": "a5.mp4"
+          },
+          {
+            "content": "item6",
+            "id": "6",
+            "type": "1",
+            "bg_up": "item_up_png",
+            "resources": "a6.mp4"
+          },
+          {
+            "content": "item7",
+            "id": "7",
+            "type": "1",
+            "bg_up": "item_up_png",
+            "resources": "a7.mp4"
+          },
+          {
+            "content": "item8",
+            "id": "8",
+            "type": "1",
+            "bg_up": "item_up_png",
+            "resources": "a8.mp4"
+          },
+          {
+            "content": "item9",
+            "id": "9",
+            "type": "1",
+            "bg_up": "item_up_png",
+            "resources": "a9.mp4"
+          },
+          {
+            "content": "item10",
+            "id": "10",
+            "type": "1",
+            "bg_up": "item_up_png",
+            "resources": "a10.mp4"
+          }
+        ]
+      }
+             
+    ]
+  }
+}

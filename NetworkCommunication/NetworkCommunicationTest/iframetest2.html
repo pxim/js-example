@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>子页面</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js" />
+    <script>
+        function showMainValue(){
+//dom方式
+var v = window.parent.document.getElementById("mainDiv").innerHTML;
+alert(v);
+
+window.parent.document.getElementById("mainDiv").innerHTML = "修改后的主页面数据";
+
+
+//jquery方式
+//            var o = $(window.parent.document).find(":div#mainDiv");
+//            alert(o.html());
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

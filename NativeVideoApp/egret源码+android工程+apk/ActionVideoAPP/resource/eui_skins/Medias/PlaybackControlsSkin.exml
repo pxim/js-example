@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PlaybackControlsSkin" width="1280" height="80" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="bg_playbackControls2_png" x="0" y="0"/>
+	<e:ToggleButton id="btn_PlayOrStop" x="15" y="10" name="btn_PlayOrStop" selected="true" skinName="Btn_Medias_PlayAndStopSkin" locked="true"/>
+	<e:Button id="btn_return" x="1205" y="10" name="btn_return" locked="true">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_return22_png" source.down="btn_return22_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label id="txt_time" x="1147" y="33" size="18" width="60" name="txt_time" text="00:00" textAlign="left" locked="true"/>
+	<e:HSlider id="hSlider" x="87" y="12" width="1050" name="hSlider" minimum="0" maximum="1050" value="0" height="16" locked="true"/>
+</e:Skin>

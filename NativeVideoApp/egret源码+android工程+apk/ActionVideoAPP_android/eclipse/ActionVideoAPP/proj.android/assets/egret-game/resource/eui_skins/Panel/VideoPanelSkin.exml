@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="VideoPanelSkin" width="1280" height="800" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="resource/assets/Background/bg_0.png" x="0" y="0" locked="true"/>
+	<e:Image source="bg_2_1_png" x="0" y="720" locked="true"/>
+	<e:Image source="bg_2_jpg" x="0" y="0" locked="true"/>
+	<e:Component id="controlsPanel" x="0" y="720" skinName="PlaybackControlsSkin" name="controlsPanel" scaleY="1" scaleX="1" locked="true"/>
+</e:Skin>
