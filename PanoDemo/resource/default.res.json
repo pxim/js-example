@@ -1,0 +1,230 @@
+{
+	"groups": [
+		{
+			"name": "preload",
+			"keys": "bg_jpg,button_down_png,button_up_png,checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,egret_icon_png,selected_png,border_png,header_png,thumb_pb_png,track_pb_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,track_sb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,background_jpg,pano_01_jpg,MapConfig_json,hero_01_png,arrow_01_png,arrow_02_png,5k8icqqBnZZ_60_DX3200_DY3200_CX1600_CY1080_jpg,5rYzlgUs7g1_60_DX312_DY312_CX156_CY50_png,5svO9RGcbKT_60_DX312_DY312_CX156_CY50_png,5ZGyifvrJRG_60_DX2160_DY2160_CX200_CY1080_png,6dfAi9GpioH_60_DX312_DY312_CX156_CY50_png,6EYfmDWfcjv_60_DX312_DY312_CX156_CY50_png,6nmBMze9Rde_60_DX312_DY312_CX156_CY50_png,6SrYjDLcXqE_60_DX312_DY312_CX156_CY50_png,6ZmYPhB2f29_60_DX1400_DY1400_CX700_CY90_png,5k8icqqBnZZ_60_DX3200_DY3200_jpg,thumbnail_jpg,pano_02_jpg,pano_03_jpg"
+		}
+	],
+	"resources": [
+		{
+			"name": "bg_jpg",
+			"type": "image",
+			"url": "2d/bg.jpg"
+		},
+		{
+			"name": "button_down_png",
+			"type": "image",
+			"url": "2d/Button/button_down.png"
+		},
+		{
+			"name": "button_up_png",
+			"type": "image",
+			"url": "2d/Button/button_up.png"
+		},
+		{
+			"name": "checkbox_select_disabled_png",
+			"type": "image",
+			"url": "2d/CheckBox/checkbox_select_disabled.png"
+		},
+		{
+			"name": "checkbox_select_down_png",
+			"type": "image",
+			"url": "2d/CheckBox/checkbox_select_down.png"
+		},
+		{
+			"name": "checkbox_select_up_png",
+			"type": "image",
+			"url": "2d/CheckBox/checkbox_select_up.png"
+		},
+		{
+			"name": "checkbox_unselect_png",
+			"type": "image",
+			"url": "2d/CheckBox/checkbox_unselect.png"
+		},
+		{
+			"name": "egret_icon_png",
+			"type": "image",
+			"url": "2d/egret_icon.png"
+		},
+		{
+			"name": "selected_png",
+			"type": "image",
+			"url": "2d/ItemRenderer/selected.png"
+		},
+		{
+			"name": "border_png",
+			"type": "image",
+			"url": "2d/Panel/border.png"
+		},
+		{
+			"name": "header_png",
+			"type": "image",
+			"url": "2d/Panel/header.png"
+		},
+		{
+			"name": "thumb_pb_png",
+			"type": "image",
+			"url": "2d/ProgressBar/thumb_pb.png"
+		},
+		{
+			"name": "track_pb_png",
+			"type": "image",
+			"url": "2d/ProgressBar/track_pb.png"
+		},
+		{
+			"name": "radiobutton_select_disabled_png",
+			"type": "image",
+			"url": "2d/RadioButton/radiobutton_select_disabled.png"
+		},
+		{
+			"name": "radiobutton_select_down_png",
+			"type": "image",
+			"url": "2d/RadioButton/radiobutton_select_down.png"
+		},
+		{
+			"name": "radiobutton_select_up_png",
+			"type": "image",
+			"url": "2d/RadioButton/radiobutton_select_up.png"
+		},
+		{
+			"name": "radiobutton_unselect_png",
+			"type": "image",
+			"url": "2d/RadioButton/radiobutton_unselect.png"
+		},
+		{
+			"name": "roundthumb_png",
+			"type": "image",
+			"url": "2d/ScrollBar/roundthumb.png"
+		},
+		{
+			"name": "track_sb_png",
+			"type": "image",
+			"url": "2d/ScrollBar/track_sb.png"
+		},
+		{
+			"name": "thumb_png",
+			"type": "image",
+			"url": "2d/Slider/thumb.png"
+		},
+		{
+			"name": "track_png",
+			"type": "image",
+			"url": "2d/Slider/track.png"
+		},
+		{
+			"name": "tracklight_png",
+			"type": "image",
+			"url": "2d/Slider/tracklight.png"
+		},
+		{
+			"name": "handle_png",
+			"type": "image",
+			"url": "2d/ToggleSwitch/handle.png"
+		},
+		{
+			"name": "off_png",
+			"type": "image",
+			"url": "2d/ToggleSwitch/off.png"
+		},
+		{
+			"name": "on_png",
+			"type": "image",
+			"url": "2d/ToggleSwitch/on.png"
+		},
+		{
+			"name": "background_jpg",
+			"type": "image",
+			"url": "3d/background.jpg"
+		},
+		{
+			"name": "pano_01_jpg",
+			"type": "image",
+			"url": "3d/pano/pano_01.jpg"
+		},
+		{
+			"name": "MapConfig_json",
+			"type": "json",
+			"url": "3d/0_Model/MapConfig.json"
+		},
+		{
+			"name": "hero_01_png",
+			"type": "image",
+			"url": "3d/0_Model/Texture/hero_01.png"
+		},
+		{
+			"name": "arrow_01_png",
+			"type": "image",
+			"url": "2d/arrow_01.png"
+		},
+		{
+			"name": "arrow_02_png",
+			"type": "image",
+			"url": "2d/arrow_02.png"
+		},
+		{
+			"name": "5k8icqqBnZZ_60_DX3200_DY3200_CX1600_CY1080_jpg",
+			"type": "image",
+			"url": "webpage/1/mobile/5k8icqqBnZZ_60_DX3200_DY3200_CX1600_CY1080.jpg"
+		},
+		{
+			"name": "5rYzlgUs7g1_60_DX312_DY312_CX156_CY50_png",
+			"type": "image",
+			"url": "webpage/1/mobile/5rYzlgUs7g1_60_DX312_DY312_CX156_CY50.png"
+		},
+		{
+			"name": "5svO9RGcbKT_60_DX312_DY312_CX156_CY50_png",
+			"type": "image",
+			"url": "webpage/1/mobile/5svO9RGcbKT_60_DX312_DY312_CX156_CY50.png"
+		},
+		{
+			"name": "5ZGyifvrJRG_60_DX2160_DY2160_CX200_CY1080_png",
+			"type": "image",
+			"url": "webpage/1/mobile/5ZGyifvrJRG_60_DX2160_DY2160_CX200_CY1080.png"
+		},
+		{
+			"name": "6dfAi9GpioH_60_DX312_DY312_CX156_CY50_png",
+			"type": "image",
+			"url": "webpage/1/mobile/6dfAi9GpioH_60_DX312_DY312_CX156_CY50.png"
+		},
+		{
+			"name": "6EYfmDWfcjv_60_DX312_DY312_CX156_CY50_png",
+			"type": "image",
+			"url": "webpage/1/mobile/6EYfmDWfcjv_60_DX312_DY312_CX156_CY50.png"
+		},
+		{
+			"name": "6nmBMze9Rde_60_DX312_DY312_CX156_CY50_png",
+			"type": "image",
+			"url": "webpage/1/mobile/6nmBMze9Rde_60_DX312_DY312_CX156_CY50.png"
+		},
+		{
+			"name": "6SrYjDLcXqE_60_DX312_DY312_CX156_CY50_png",
+			"type": "image",
+			"url": "webpage/1/mobile/6SrYjDLcXqE_60_DX312_DY312_CX156_CY50.png"
+		},
+		{
+			"name": "6ZmYPhB2f29_60_DX1400_DY1400_CX700_CY90_png",
+			"type": "image",
+			"url": "webpage/1/mobile/6ZmYPhB2f29_60_DX1400_DY1400_CX700_CY90.png"
+		},
+		{
+			"name": "5k8icqqBnZZ_60_DX3200_DY3200_jpg",
+			"type": "image",
+			"url": "webpage/1/story_content/5k8icqqBnZZ_60_DX3200_DY3200.jpg"
+		},
+		{
+			"name": "thumbnail_jpg",
+			"type": "image",
+			"url": "webpage/1/story_content/thumbnail.jpg"
+		},
+		{
+			"name": "pano_02_jpg",
+			"type": "image",
+			"url": "3d/pano/pano_02.jpg"
+		},
+		{
+			"name": "pano_03_jpg",
+			"type": "image",
+			"url": "3d/pano/pano_03.jpg"
+		}
+	]
+}
