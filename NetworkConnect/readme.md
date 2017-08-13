@@ -1,5 +1,5 @@
 
-### NetworkConnectExample
+### NetworkConnect
 
 预览：http://arvin0.github.io/egret-example/NetworkConnect/index.html
 

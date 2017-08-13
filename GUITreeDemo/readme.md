@@ -1,5 +1,5 @@
 
-### GUITreeExample
+### GUITreeDemo
 
 预览：http://arvin0.github.io/egret-example/GUITreeDemo/index.html
 
