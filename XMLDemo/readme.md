@@ -1,6 +1,6 @@
 ### XMLDemo
 
-预览：http://arvin0.github.io/egret-example/XMLDemo/index.html
+预览：http://seanpx.github.io/egret-example/XMLDemo/index.html
 
 功能：Egret里XML用法案例
 

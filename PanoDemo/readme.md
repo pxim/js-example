@@ -2,7 +2,7 @@
 
 这个是以前想用egret3d来做全景展厅项目时弄的技术测试demo，代码写的比较随意，不用细纠，现在放出来是给一些想用e3d做全景展厅的人，对那些用得到的人，做些参考的；
 
-效果预览：http://arvin0.github.io/egret-example/PanoDemo/index.html
+效果预览：http://seanpx.github.io/egret-example/PanoDemo/index.html
 
 
 #### 功能：

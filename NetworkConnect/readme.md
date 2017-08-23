@@ -1,7 +1,7 @@
 
 ### NetworkConnect
 
-预览：http://arvin0.github.io/egret-example/NetworkConnect/index.html
+预览：http://seanpx.github.io/egret-example/NetworkConnect/index.html
 
 功能：网络通信方法测试
 

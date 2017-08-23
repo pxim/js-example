@@ -1,7 +1,7 @@
 
 ### NativeVideoApp
 
-预览：http://arvin0.github.io/egret-example/NativeVideoApp/egret源码+android工程+apk/ActionVideoAPP/index.html
+预览：http://seanpx.github.io/egret-example/NativeVideoApp/egret源码+android工程+apk/ActionVideoAPP/index.html
 
 功能：Egret Native版本 视频播放器（Android）
 
