@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+<div style="height:300px;width:350px;margin:100px auto;margin-left:auto;border:solid 1px;background: rgb(246, 246, 253);">
+    <div style="width:200px;margin:auto;margin-top:50px;">
+        # 用户登录
+        <form action="#"  role="form" method="post" >
+            <input id="username" type="text" name="username" style="margin: 20px 0px;" />
+            <input id="password" type="password" name="password" />
+            <div style="margin-top:30px;margin-left:125px;">
+                <input type="button" onclick="login();" value="登 陆">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+
+<script>
+    function login(){
+        var username = $('#username').val();
+        var password = $('#password').val();
+        var data = { "username": username, "password":password};
+        $.ajax({
+            url:'login',
+            type:'POST',
+            data:data,
+            success:function(data,status){
+                if(status == 'success'){
+                    location.href='home';
+                }
+            },
+            error:function(data,status,e){
+                if(status == "error"){
+                    location.href='login';
+                }
+            }
+        });
+    }
+</script>
+
+</html>

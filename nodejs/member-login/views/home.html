@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+<div style="height:400px;width:550px;margin:50px auto;margin-left:auto;border:solid 1px;background: rgb(246, 246, 253);">
+    <div style="margin-left: 45px;">
+        # 主页
+        <form action="#"  role="form" style="margin-top: 90px;">
+            # 登陆成功！
+            <div style="margin-top: 145px;">
+                <input  type="button" value="退 出" onclick="logout();"/>
+                <!--<input  type="button" value="[退 出](logout)" />-->
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+
+<script>
+    function logout(){
+        $.ajax({
+            url:'logout',
+            type:'GET',
+            success:function(data,status){
+                if(status == 'success'){
+                    location.href='index';
+                }
+            },
+            error:function(data,status,e){
+                if(status == "error"){
+                    location.href='logout';
+                }
+            }
+        });
+    }
+</script>
+</html>

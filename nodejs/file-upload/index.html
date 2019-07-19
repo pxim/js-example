@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件上传表单</title>
+    <!--<script type="text/javascript" src="jquery.min.js"></script>-->
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="jquery.form.js"></script>
+</head>
+<body>
+<h3>文件上传：</h3>
+<h4>选择一个文件，选择完成后就执行上传：</h4>
+<!--<form action="/upload_json" method="post" enctype="multipart/form-data">-->
+<form id="form1" action="/upload_file" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" size="50" onchange="impFile(this.files)" />
+</form>
+
+
+<div style="width: 100%; height: 50px;"></div>
+<h4>选择一个文件，然后点击按钮执行上传：</h4>
+<form id="form2" action="/upload_file" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" size="50" />
+    <br />
+    <p></p>
+    <input type="submit" value="form上传文件" />
+</form>
+<p></p>
+<input type="button" value="ajax上传文件" onclick="test1();" />
+
+<script>
+    var _file;
+    //选择完文件就上传
+    function impFile(files) {
+        _file = files;
+        $("#form1").ajaxSubmit();
+    }
+    
+    function upload() {
+        if(_file === undefined){
+            return;
+        }
+        var formData = new FormData(document.getElementById("form1"));//表单id
+        $.ajax({
+//            url:'127.0.0.1:8089/upload_json',
+            url:'upload_json',
+            type:'POST',
+            data:formData,
+            success:function(data,status){
+                if(status == 'success'){
+
+                }
+            },
+            error:function(data,status,e){
+                if(status == "error"){
+//
+                }
+            }
+        });
+    }
+
+
+    function test1() {
+        $("#form2").ajaxSubmit();
+    }
+
+</script>
+</html>
